@@ -3,10 +3,12 @@
     <head>
         <link type="text/css" rel="stylesheet" href="{{asset('css/materialize.min.css')}}"  media="screen,projection"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="_token" content="{{ csrf_token() }}"/>
         <title>@yield('title')</title>
         <meta name="author" content="Department of Management Studies, NIT Trichy">
         <meta name="description" content="Two-day employability Skill Enhancement Programme">
         <meta name="keywords" content="Skill Enhacement Programme,SEP,2015,NITT,DoMS,Department of Management Studies">
+        <script>var base_url = "{{ url('/') }}";</script>
         <style>
             body{
                 background-image: url("{{asset('images/brushed_alu.png')}}");
@@ -51,6 +53,7 @@
             $(document).ready(function(){
             $(".button-collapse").sideNav();
             });
+            @yield('javascript')
         </script>
         </body>
 </html>

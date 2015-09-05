@@ -1,9 +1,10 @@
 @extends('base')
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 @section('title')
     Resource Person
 @stop
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 @section('nav-bar')
     <li><a href="/" class="waves-effect waves-light">Home</a></li>
